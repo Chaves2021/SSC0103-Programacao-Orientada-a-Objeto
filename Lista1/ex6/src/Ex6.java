@@ -6,6 +6,7 @@ public class Ex6
 	{
 		while(true)
 		{
+			System.out.println("Input a float number: ");
 		}
 	}
 }
