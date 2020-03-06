@@ -6,4 +6,4 @@ Lista1/ex*/bin/
 *.pdf
 
 # Não adicionar diversos EntradaTeclado
-Lista1/ex*/src/EntradaTeclado.java
+Lista1/ex1/src/EntradaTeclado.java
