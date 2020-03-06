@@ -1,5 +1,9 @@
 # Não adicionar os diretórios
 Aulas/
+Lista1/ex*/bin/
 
 # Não adicionar os tipos de arquivos
 *.pdf
+
+# Não adicionar diversos EntradaTeclado
+Lista1/ex*/EntradaTeclado.java
