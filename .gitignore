@@ -6,4 +6,4 @@ Aulas/
 *.pdf
 
 # Não adicionar diversos EntradaTeclado
-*/src/EntradaTeclado.java
+EntradaTeclado.java
