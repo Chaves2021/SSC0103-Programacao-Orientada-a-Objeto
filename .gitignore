@@ -1,7 +1,7 @@
 # Não adicionar os diretórios
 Aulas/
 *bin/
-doc/
+*doc/
 
 # Não adicionar os tipos de arquivos
 *.pdf
