@@ -15,7 +15,7 @@ public class RolaDados
 
 	public int[] rolar()
 	{
-		for(i = 0; i < n_dados; i++) 
+		for(int i = 0; i < n_dados; i++) 
 		{
 			dados[i].rolar();
 			faces[i] = dados[i].lado;
@@ -25,7 +25,7 @@ public class RolaDados
 
 	public int[] rolar(boolean[] quais)
 	{
-		for(i = 0; i < n_dados; i++)
+		for(int i = 0; i < n_dados; i++)
 		{
 			if(quais[i] == true) 
 			{
@@ -73,7 +73,7 @@ public class RolaDados
 	@Override
 	public java.lang.String toString()
 	{
-		for(i = 0; i < 5; i++)
+		for(int i = 0; i < 5; i++)
 		{
 			System.out.print(dados[0].toString().substring(i*8,(i+1)*8-1) + " ");
 			System.out.print(dados[1].toString().substring(i*8,(i+1)*8-1) + " ");
