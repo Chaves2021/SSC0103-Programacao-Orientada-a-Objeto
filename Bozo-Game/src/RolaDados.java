@@ -63,10 +63,6 @@ public class RolaDados
 					dados[4].rolar();
 					faces[4] = dados[4].lado;
 					break;
-				case "6":
-					dados[5].rolar();
-					faces[5] = dados[5].lado;
-					break;
 				default:
 					break;
 			}
@@ -75,9 +71,15 @@ public class RolaDados
 	}
 
 	@Override
-	//TODO
-	//Pesquisar sobre "Java Stream"
 	public java.lang.String toString()
 	{
+		for(i = 0; i < 5; i++)
+		{
+			System.out.print(dados[0].toString().substring(i*8,(i+1)*8-1) + " ");
+			System.out.print(dados[1].toString().substring(i*8,(i+1)*8-1) + " ");
+			System.out.print(dados[2].toString().substring(i*8,(i+1)*8-1) + " ");
+			System.out.print(dados[3].toString().substring(i*8,(i+1)*8-1) + " ");
+			System.out.println(dados[4].toString().substring(i*8,(i+1)*8-1) + " ");
+		}
 	}
 }
