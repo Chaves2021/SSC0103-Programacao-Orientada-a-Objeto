@@ -3,19 +3,19 @@ import java.util.Calendar;
 
 public class Random
 {
-	//Parameters to random number generator
+	//Parametros para geração de número randomico
 	private long p = 2147483648L;
 	private long m = 843314861;
 	private long a = 453816693;
 
-	//This is the seed
-	//It is going to be replaced by the time using the calendar function
-	private long xi = 1023;
+	//Essa é a semente
+	private long xi;
+	public void setSemente(int semente){ this.xi = semente; }
 
 	public double getRand()
 	{
 		xi = (a + m * xi) % p;
-		//Casting xi (long) to double
+		//Castando xi (long) para double
 		double d = xi;
 		return d / p;
 	}
@@ -25,9 +25,9 @@ public class Random
 		double d = getRand() * max;
 		return (int) d;
 	}
-	//This is a constructor
 	public Random()
 	{
-		xi = Calendar.getInstance().getTimeInMillis();
+		//Seed estava dando overflow e ao dividir por 10 problema foi resolvido
+		xi = Calendar.getInstance().getTimeInMillis() / 10;
 	}
 }
