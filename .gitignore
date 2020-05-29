@@ -2,6 +2,7 @@
 Aulas/
 *bin/
 *doc/
+*.idea/
 
 # Não adicionar os tipos de arquivos
 *.pdf
