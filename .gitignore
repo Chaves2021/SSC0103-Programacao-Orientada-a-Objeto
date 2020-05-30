@@ -3,6 +3,7 @@ Aulas/
 *bin/
 *doc/
 *.idea/
+*eclipse-workspace/
 
 # Não adicionar os tipos de arquivos
 *.pdf
